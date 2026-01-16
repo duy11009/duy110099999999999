@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chúc mừng sinh nhật Đặng Lê Bảo Ngọc</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1e90ff; /* xanh dương */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            margin-top: 30px;
+        }
+
+        .gift-box {
+            width: 150px;
+            height: 150px;
+            background-color: #ff4d4d;
+            margin: 50px auto;
+            position: relative;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .gift-box::before {
+            content: "";
+            position: absolute;
+            width: 150px;
+            height: 20px;
+            background-color: #ffd700;
+            top: 65px;
+            left: 0;
+        }
+
+        .gift-box::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 150px;
+            background-color: #ffd700;
+            left: 65px;
+            top: 0;
+        }
+
+        .bear {
+            display: none;
+            margin-top: 30px;
+        }
+
+        .bear-face {
+            width: 200px;
+            height: 200px;
+            background-color: #4da6ff;
+            border-radius: 50%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .ear {
+            width: 60px;
+            height: 60px;
+            background-color: #4da6ff;
+            border-radius: 50%;
+            position: absolute;
+            top: -20px;
+        }
+
+        .ear.left {
+            left: 10px;
+        }
+
+        .ear.right {
+            right: 10px;
+        }
+
+        .eye {
+            width: 15px;
+            height: 15px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 80px;
+        }
+
+        .eye.left {
+            left: 60px;
+        }
+
+        .eye.right {
+            right: 60px;
+        }
+
+        .sign {
+            margin-top: 20px;
+            background-color: white;
+            color: #1e90ff;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎉 Chúc mừng sinh nhật 🎉</h1>
+    <p>Đặng Lê Bảo Ngọc - Lớp 7A3</p>
+    <p>🎂 Sinh ngày 03/01/2013 🎂</p>
+
+    <div class="gift-box" onclick="openGift()"></div>
+    <p>(Bấm vào hộp quà 🎁)</p>
+
+    <div class="bear" id="bear">
+        <div class="bear-face">
+            <div class="ear left"></div>
+            <div class="ear right"></div>
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+        </div>
+
+        <div class="sign">
+            🎉 Chúc mừng sinh nhật <br>
+            Đặng Lê Bảo Ngọc 🎉
+        </div>
+    </div>
+
+    <script>
+        function openGift() {
+            document.getElementById("bear").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
